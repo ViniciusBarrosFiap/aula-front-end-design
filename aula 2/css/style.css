@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1{
+    text-align: center;
+    text-shadow: 3px 5px 3px #777 ;
+}
+
+h2 {
+    text-align: center;
+}
+
+#link {
+    text-decoration: none;
+}
+
+#primeiro {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 30px; */
+    text-align: justify;
+    /* text-decoration: overline; */
+    text-decoration: underline;
+}
+
+#segundo {
+    /* font-size: 150%; */
+    /* text-transform: lowercase; */
+    line-height: 25px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-indent: 30px;
+}
+
+#terceiro {
+    /* font-size: 1.5em; */
+    /* font-style: italic; */
+}
+
+#exemplo {
+    font-weight: bold;
+}
