@@ -1,0 +1,29 @@
+.h2sports {
+    text-align: center;
+    background-color: #6B8E23 ;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.psports {
+    background-color: #6B8E23;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h2negocios {
+    text-align: center;
+    background-color: #EEE8AA ;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.pnegocios {
+    background-color: #EEE8AA;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
