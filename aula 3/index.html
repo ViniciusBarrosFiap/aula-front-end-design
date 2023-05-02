@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        thead {
+            background-color: grey;
+        }
+        tfoot {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Vinicius Barros</td>
+                <td>(19)98248-6626</td>
+                <td>rm97824@fiap.com.br</td>
+            </tr>
+            <tr>
+                <!-- <td>Vinicius Barros</td> -->
+                <td>(19)12345-6789</td>
+                <td>fiap@fiap.com.br</td>
+            </tr>
+            <tr>
+                <td>Beatriz Dias</td>
+                <td>(11)94326-7727</td>
+                <td>email@dominio.com.br</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Lista de contatos da Fiap</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

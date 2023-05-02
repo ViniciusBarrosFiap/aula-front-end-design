@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        form {
+            width: 300px;
+            margin: auto;
+        }
+        label {
+            display: inline-block;
+            width: 80px;
+        }
+        input {
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro" name="cadastro" method="get">
+        
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="c-nome">Nome</label>
+            <input type="text" name="nome" id="c-nome">
+
+            <label for="c-email">Email</label>
+            <input type="email" name="email" id="c-email">
+            
+            <label for="c-senha">Senha</label>
+            <input type="password" name="senha" id="c-senha">
+            
+        </fieldset>
+        <fieldset>
+            <legend>Outros</legend>
+            
+            <label for="c-busca">Busca</label>
+            <input type="search" name="busca" id="c-busca">
+            
+            <label for="c-site">Site</label>
+            <input type="url" name="site" id="c-site">
+            
+            <label for="c-data">Data</label>
+            <input type="date" name="data" id="c-data">
+            
+            <label for="c-hora">Hora</label>
+            <input type="time" name="hora" id="c-hora"><br>
+            
+            <label for="c-reuniao">Reunião</label>
+            <input type="datetime-local" name="reuniao" id="c-reuniao"><br>
+            
+            <label for="c-mes">Mes</label>
+            <input type="month" name="mes" id="c-mes">
+
+            <label for="c-semana">Semana</label>
+            <input type="week" name="semana" id="c-semana">
+
+            <label for="c-valor">Valor</label>
+            <input type="number" name="valor" id="c-valor" min="0" max="10" step="0.1"><br>
+        
+            <label for="c-quant">Quantidade</label>
+            <input type="range" name="quantidade" id="c-quant">
+        </fieldset>
+        <fieldset>
+            <legend>Tamanho</legend>
+            <input type="radio" name="tamanho" id="c-pequeno" value="P">
+            <label for="c-pequeno">Pequeno</label><br>
+
+            <input type="radio" name="tamanho" id="c-medio" value="M">
+            <label for="c-medio">Médio</label><br>
+
+            <input type="radio" name="tamanho" id="c-grande" value="G">
+            <label for="c-grande">Grande</label>
+        </fieldset>
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
