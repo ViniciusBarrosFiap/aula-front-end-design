@@ -1,0 +1,66 @@
+a:link{
+    color: purple
+}
+
+a:visited{
+    color:red
+}
+a:hover{
+    color: aquamarine;
+}
+
+a:focus{
+    color:blueviolet
+}
+
+input:focus{
+    background-color: rgba(97, 212, 247, 0.801);
+}
+
+a:active{
+    color: rgb(0, 138, 80);
+}
+
+ul li:first-child{
+    color: red;
+}
+/* 
+ul li:last-child{
+    color: forestgreen;
+}
+
+ul li:nth-child(even){
+    background-color: dimgrey;
+} */
+
+/* ul li:nth-last-child(1){
+    background-color: lightcoral;
+} */
+
+ul li:nth-of-type(1){
+    background-color: gold;    
+}
+
+.container :nth-of-type(2){
+    background-color: darkturquoise;
+}
+
+input:invalid{
+    color: red;
+}
+
+p::before{
+    content: '*';
+    font-size: 2em;
+    color: blue;
+}
+
+p::after{
+    content:"ok";
+    font-size: 1.5em;
+    color: green;
+}
+
+
+
+
