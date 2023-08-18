@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria-amarelo: #ffc107;
+    --color-azul: #02A9EA;
+    --color-cinzaClaro: #262626;
+    --montserrat: 'Montserrat',sans-serif;
+    --poppins:'poppins', sans-serif;
+}
+
+body{
+    background-image: url(/img/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--poppins);
+    min-height: 100vh;
+}
+
+a{
+    font-family: var(--poppins);
+    text-decoration: none;
+    /* color: white; */
+}
+
+img{
+    max-width: 1200px;
+    max-height: 500px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #02A9EA;
+}
+.img_logo_cabecalho{
+    max-width: 350px;
+    height: auto;
+}
+.cabecalho_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalho_links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.cabecalho_links li a{
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.cabecalho_links li a:hover{
+    background-color: var(--cor-primaria-amarelo);
+    color: black;
+    
+}
+.navCabecalho{
+    width: 50%;
+}
+.icon-menu{
+    display: none;
+}
+.container_principal{
+    min-height: 0vh;
+    margin: 3rem;
+    /* padding: 3rem; */
+    /* background-color: aliceblue */
+    border-radius: 50px;
+}
+
+.imagem_banner_principal img{
+    border-radius: 50px;
+}
+.imagem_banner_principal img:hover{
+    box-shadow: 0 3px 10px var(--cor-primaria-amarelo);
+}
+.align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fraseExpressiva{
+    background-color: var(--color-azul);
+    color: white;
+    margin: 0rem 2rem;
+    border-radius: 20px;
+}
+.fraseExpressiva h2{
+    font-size: 32px;
+    padding: 1rem;
+}
+.h1produtos{
+    color: white;
+    margin-top: 4rem;
+}
+
+.imgProduto{
+    max-width: 15rem;
+    border-radius: 30px;
+}
+.sectionProdutos{
+    background-color: black;
+    margin: 0rem 5rem;
+    border-radius: 30px;
+
+}
+
+.sectionProdutos h1{
+    text-align: center;
+    background-color: var(--cor-primaria-amarelo);
+    padding: 2rem;
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    border-radius: 20px;
+}
+.grupoProdutos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    /* padding: 2rem 10rem; */
+}
+.boxProdutos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #262626;
+    max-width: 15rem;
+    max-height: 90rem;
+    border-radius: 30px;
+    margin: 2rem;
+    
+    
+}
+.boxProdutos:hover{
+    box-shadow: 5px -8px 10px 0px var(--cor-primaria-amarelo);
+}
+h3{
+    color: white;
+    padding: 1rem;
+}
+button{
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: var(--color-azul);
+    border-radius: 30px;
+    border: none;
+    color: white;
+}
+button:hover{
+    background-color: var(--cor-primaria-amarelo);
+    color: black;
+    cursor:pointer;
+}
+.pProduto{
+    color: white;
+}
+.h2Rodape{
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.rodape_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+    margin-top: 5rem;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.rodape_container_termos ul li a{
+    color: white;
+    font-size: 25px;
+}
+.rodape_container_termos ul li a:hover{
+    color: var(--cor-primaria-amarelo);
+    font-size: 25px;
+}
+.rodape_container ul li{
+    margin-bottom: 5px;
+}
+.rodape_container ul{
+    margin-bottom: 4rem;
+    list-style: none;
+}
+
+@media (max-width: 1400px) {
+    .fraseExpressiva h2{
+        width: 70%;
+    }
+    .container_principal{
+        margin: 1rem;
+    }
+    .sectionProdutos{
+        margin: 0rem 2rem;
+    }
+    .grupoProdutos{
+        padding: 2rem;
+    }
+    .boxProdutos{
+        max-width: 45%;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 1210px) {
+    img{
+        max-width: 1000px;
+        max-height: 250px;
+    }
+    .rodape_container{
+        flex-direction: row;
+    }
+    .rodape_container img{
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .fraseExpressiva h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1075px){
+    .boxProdutos{
+        flex-basis: 30%;
+    }
+}
+@media (max-width: 990px) {
+    img{
+        max-width: 900px;
+        max-height: 250px;
+    }
+    .rodape_container img{
+        max-width: 475px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    img{
+        max-width: 700px;
+        max-height: 250px;
+    }
+    .rodape_container{
+        flex-direction: column;
+    }
+    .cabecalho_links{
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 695px){
+    .container_principal{
+        display: none;
+    }
+    .fraseExpressiva{
+        margin-top: 3rem;
+    }
+    .cabecalho_links{
+        display: none;
+    }
+    .icon-menu{
+        display: block;
+        padding-right: 5rem;
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width:580px) {
+    img{
+        max-width: 400px;
+        max-height: 400px;
+    }
+    
+    .boxProdutos{
+        flex-basis: 100%;
+        max-width: 90%;
+    }
+    .boxProdutos img{
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:500px) {
+    .icon-menu{
+        font-size: 24px;
+    }
+    .img_logo_cabecalho{
+        max-width: 200px;
+    }
+    .cabecalho{
+        max-width: 32rem;
+    }
+    main{
+        max-width: 32rem;
+    }
+
+    .rodape_container_termos ul li a{
+       
+        font-size: 12px;
+    }
+    .rodape_container img{
+        max-width: 275px;
+    }
+    .icon-menu{
+        display: block;
+        padding-right: 2rem;
+        
+    }
+
+}
