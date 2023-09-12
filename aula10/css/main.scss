@@ -1,0 +1,68 @@
+@import './variaveis';
+
+@each $key, $cor in $colors{
+    .text-#{$key}{
+        color:$cor;
+    }
+}
+
+
+@mixin btn($tamanho, $bg-color, $text-color){
+    
+    @if $tamanho == peq{
+        font-size: 12px;
+        border-radius: 8px;
+    }@else if $tamanho == med{
+        font-size: 18px;
+        border-radius: 12px;
+    }@else if $tamanho == gde{
+        font-size: 24px;
+        border-radius: 16px;
+    }
+
+    font-size: $tamanho;
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 10px 15px;
+}
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: $bg-header;
+    @extend %flex-center;
+    flex-direction: column;
+    &:hover{
+        background-color: lightgreen;
+    }
+    h1{
+        color: $title-color;
+    }
+    p{
+        color: darkblue;
+    }
+
+    @media screen and (max-width: 768px){
+        background-color: coral;
+    }
+}
+
+button{
+    @include btn(gde, yellow, black)
+}
+
+@for $x from 1 through 5{
+    .text-#{$x}{
+        font-size: 8px * $x;
+    }
+}
